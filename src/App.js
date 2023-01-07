@@ -39,16 +39,12 @@ export default function App() {
         ))}
       </div>
       <hr />
-      <div style={{ textAlign: "left" }}>
-        <ul style={{ paddingInlineStart: "0" }}>
           {Mybooks[getBooks].map((author) => (
             <li className="list">
               <div style={{ fontSize: "larger" }}> {author.name} </div>
               <div style={{ fontSize: "smaller" }}> {author.Rating} </div>
             </li>
           ))}
-        </ul>
       </div>
-    </div>
   );
 }
